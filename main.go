@@ -1,33 +1,45 @@
 package main
+
 import "fmt"
-import "variables"
-//declare a variable
 
-func main(){
-var name string
-//Declaration with initialization
-var Name1 string = "John"
+/*type Student struct {
+	RollNumber  int
+	StudentName string
+}
 
-//Declaration with type inference
+func main() {
 
-var age = 32
+	student1 := Student{
+		RollNumber:  301,
+		StudentName: "Krishna",
+	}
+	student2 := Student{
+		RollNumber:  302,
+		StudentName: "Ram",
+	}
 
-//Declaration of multiple variables
+	student := map[string]Student{
 
-var name2, age1 = "Martin",43
+		"sid1": student1,
+		"sid2": student2,
+	}
+	for sid, data := range student {
+		fmt.Println(sid, data)
+	}
 
-//shorthand declaration
+}*/
 
-name3 := "JohnMartin"
+func main() {
+	employee := map[string]int{
+		"John":   60000,
+		"Martin": 70000,
+	}
 
-StudentName
-
-//static type
-//dynamic type
-
-//scope of variables
-Data types
-const pi = 3.124
-const website = "http://localhost:8080/login"
-
+	newemployee := "John"
+	value, ok := employee[newemployee]
+	if ok == true {
+		fmt.Println(newemployee, value)
+		return
+	}
+	fmt.Println(newemployee, "Not found")
 }
